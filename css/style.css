@@ -1,0 +1,72 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
+  letter-spacing: -0.64px;
+  line-height: 1.4;
+}
+
+/* 공통 */
+/* header */
+.header {
+  position: relative;
+  display: block;
+}
+
+/* visual */
+.visual {
+  position: relative;
+  display: block;
+}
+
+/* 슬라이더아이템 */
+.slider_item {
+  position: relative;
+  display: block;
+}
+
+/* best_item */
+.best_item {
+  position: relative;
+  display: block;
+}
+
+/* 카테고리 */
+.kategorie {
+  position: relative;
+  display: block;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  display: block;
+}
