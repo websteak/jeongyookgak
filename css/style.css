@@ -23,22 +23,121 @@ img {
 }
 
 html {
-  font-size: 16px;
+  font-size: 10px;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 12px;
   letter-spacing: -0.64px;
   line-height: 1.4;
+  padding-top: 96px;
 }
 
 /* 공통 */
-/* header */
-.header {
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  position: relative;
+}
+
+.inner {
+  width: 1184px;
+  margin: 0 auto;
+}
+
+/* pop up */
+.pop-up {
   position: relative;
   display: block;
+}
+
+/* header */
+/* header float */
+.logo,
+.header-left-menu,
+.header-left-menu>ul>li,
+.header-right-menu>ul,
+.header-right-menu>ul>li,
+.heder-menu-division-line,
+.cart-icon,
+.hamburger-icon {
+  float: left;
+}
+
+.header-right-menu {
+  float: right;
+}
+
+/* header 배치, 폰트, 컬러 */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 9.6rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  z-index: 9;
+}
+
+.header-container {
+  height: 7.2rem;
+  padding-top: 2.4rem;
+}
+
+.logo>img {
+  width: 129px;
+  height: 48px;
+}
+
+.header-left-menu {
+  margin: 16px 0 0 34px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.header-left-menu>ul>li {
+  padding: 0 5px;
+  margin-right: 14px;
+}
+
+.header-right-menu {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.header-right-menu>ul {
+  margin-top: 22px;
+}
+
+.heder-menu-division-line {
+  width: 1px;
+  height: 12px;
+  margin: 22px 20px 0;
+}
+
+.header-right-menu>ul>li:last-child {
+  margin-left: 12px;
+}
+
+.cart-icon>a>img,
+.hamburger-icon>a>img {
+  width: 48px;
+  height: 48px;
+}
+
+.cart-icon {
+  margin-left: 24px;
+}
+
+.hamburger-icon {
+  margin-left: 8px;
 }
 
 /* visual */
@@ -47,26 +146,107 @@ body {
   display: block;
 }
 
-/* 슬라이더아이템 */
-.slider_item {
-  position: relative;
-  display: block;
+.visual-img {
+  width: 100%;
+  height: calc(100vw / 3);
+  background: url(../images/visual.png) no-repeat center;
+  background-size: cover;
 }
 
-/* best_item */
-.best_item {
-  position: relative;
+/* event-guide */
+.event-guide>.inner {
+  margin: 4.8rem 24.8rem 0;
+  width: 1184px;
+  overflow: hidden;
+}
+
+.event-guide-slide,
+.event-guide-free-shipping {
+  float: left;
+  width: 50%;
+}
+
+.swiper-slide img {
   display: block;
+  width: 100%;
+}
+
+.event-guide-free-shipping {}
+
+/* best-product */
+.best-product>.inner {
+  margin: 80px auto 0;
+}
+
+.best-product>.inner>h3 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-contents {
+  width: 376px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.product-item {
+  position: relative;
+  /* width: 376px; */
+  height: 416px;
+  background: #f9f8f7;
+}
+
+.product-item>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 276px;
+}
+
+.product-item>.nonantibiotic-tag {
+  position: absolute;
+  left: 53.5px;
+  top: 31px;
+  width: 75px;
+  height: 30px;
+}
+
+.product-item>a {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url(../images/items-icon.svg)no-repeat -2px -2px;
+  background-size: 70px;
+  border: 2px solid rgb(238, 238, 238);
+  border-radius: 50%;
+}
+
+.product-contents>h4 {
+  margin-top: 1.6rem;
+}
+
+.product-contents>p {
+  color: rgb(155, 155, 155);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 /* 카테고리 */
-.kategorie {
-  position: relative;
-  display: block;
+.go-shopping>.inner {
+  margin: 33px auto 0;
 }
 
 /* footer */
-.footer {
-  position: relative;
-  display: block;
-}
+.footer {}

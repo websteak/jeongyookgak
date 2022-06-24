@@ -6,27 +6,170 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>정육각 :: 언제나 초신선</title>
+  <!-- favicon -->
+  <link rel=icon href="images/favicon16.png" sizes=16x16>
+  <link rel=icon href="images/favicon32.png" sizes=32x32>
+  <link rel=icon href="images/favicon192.png" sizes=192x192>
+  <!-- swiper -->
+  <link rel="stylesheet" href="js/swiper/swiper.min.css">
+  <script src="js/swiper/swiper.min.js"></script>
+  <!-- css / js -->
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
+  <!-- pop up -->
+  <div class="pop-up"></div>
   <div class="wrap">
+
     <!-- header -->
     <header class="header">
-      <div class="inner"></div>
+      <div class="inner">
+        <div class="header-container clearfix">
+          <h1 class="logo"><img src="images/logo.svg" alt="logo-img"></h1>
+          <div class="header-left-menu">
+            <ul class="clearfix">
+              <li>쇼핑하기</li>
+              <li>배송안내</li>
+              <li>이벤트</li>
+            </ul>
+          </div>
+          <div class="header-right-menu clearfix">
+            <ul>
+              <li>공지사항</li>
+              <li>고객센터</li>
+            </ul>
+            <span class="heder-menu-division-line">|</span>
+            <ul>
+              <li>로그인</li>
+              <li>회원가입</li>
+            </ul>
+            <div class="cart-icon">
+              <a href="#"><img src="images/cart-icon.svg" alt="cart-icon"></a>
+            </div>
+            <div class="hamburger-icon">
+              <a href="#"><img src="images/hamburger-icon.svg" alt="hamburger-icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
     <!-- visual -->
     <section class="visual">
-      <div class="inner"></div>
+      <div class="visual-img"></div>
     </section>
+
     <!-- event-guide -->
     <section class="event-guide">
-      <div class="inner"></div>
+      <div class="inner clearfix">
+        <div class="event-guide-slide">
+          <div class="swiper-container sw-event">
+            <!-- 슬라이드 내용 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/slide-1.png" alt="slide-img-1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-2.png" alt="slide-img-2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-3.png" alt="slide-img-3">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-4.png" alt="slide-img-4">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-5.png" alt="slide-img-5">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-6.png" alt="slide-img-6">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-7.png" alt="slide-img-7">
+              </div>
+            </div>
+            <!-- 슬라이드 페이지네이션 -->
+            <div class="swiper-pagination"></div>
+            <!-- 슬라이드 좌우버튼 -->
+            <button class="swiper-prev"></button>
+            <button class="swiper-next"></button>
+          </div>
+        </div>
+        <div class="event-guide-free-shipping">
+          <img src="images/event-img2.png" alt="shipping-img">
+        </div>
+      </div>
     </section>
+
     <!-- best-product -->
     <section class="best-product">
-      <div class="inner"></div>
+      <div class="inner">
+        <h3>정육각 베스트 상품</h3>
+        <div class="product-container">
+          <div class="product-contents">
+            <div class="product-item">
+              <img src="images/items1.png" alt="items-1">
+              <a href="#"></a>
+            </div>
+            <h4>초신선 돼지 삼겹살 구이용</h4>
+            <p>기준가 21,600원/600g</p>
+          </div>
+          <div class="product-contents">
+            <div class="product-item">
+              <img src="images/items2.png" alt="items-1">
+              <a href="#"></a>
+            </div>
+            <h4>초신선 돼지 삼겹살 구이용</h4>
+            <p>기준가 21,600원/600g</p>
+          </div>
+          <div class="product-contents">
+            <div class="product-item">
+              <img src="images/items3.png" alt="items-1">
+              <a href="#"></a>
+            </div>
+            <h4>초신선 돼지 삼겹살 구이용</h4>
+            <p>기준가 21,600원/600g</p>
+          </div>
+          <div class="product-contents">
+            <div class="product-item">
+              <img src="images/items4.png" alt="items-1">
+              <img class="nonantibiotic-tag" src="images/items-tag.svg" alt="nonantibiotic-tag">
+              <a href="#"></a>
+            </div>
+            <h4>초신선 돼지 삼겹살 구이용</h4>
+            <p>기준가 21,600원/600g</p>
+          </div>
+          <div class="product-contents">
+            <div class="product-item">
+              <img src="images/items5.png" alt="items-1">
+              <img class="nonantibiotic-tag" src="images/items-tag.svg" alt="nonantibiotic-tag">
+              <a href="#"></a>
+            </div>
+            <h4>초신선 돼지 삼겹살 구이용</h4>
+            <p>기준가 21,600원/600g</p>
+          </div>
+          <div class="product-contents">
+            <div class="product-item">
+              <img src="images/items6.png" alt="items-1">
+              <img class="nonantibiotic-tag" src="images/items-tag.svg" alt="nonantibiotic-tag">
+              <a href="#"></a>
+            </div>
+            <h4>초신선 돼지 삼겹살 구이용</h4>
+            <p>기준가 21,600원/600g</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- go shopping -->
+    <section class="go-shopping">
+      <div class="inner">
+        <a href="#"><img src="images/banner_shop.96086e0.png" alt=""></a>
+      </div>
+    </section>
+
     <!-- footer -->
     <footer class="footer">
       <div class="inner"></div>
