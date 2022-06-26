@@ -249,4 +249,19 @@ body {
 }
 
 /* footer */
-.footer {}
+.footer {
+  margin-top: 150px;
+}
+
+.footer-container-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid rgb(189, 189, 189);
+  padding: 11px 0;
+}
+
+.footer-top-left-nav{
+  font-size: 1.4rem;
+  line-height: 40px;
+}
